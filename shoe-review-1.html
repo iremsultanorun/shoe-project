@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOES</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ::selection {
+            background: #9e9e9e;
+            color: rgb(0, 0, 0);
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+
+        section {
+            width: 100wh;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section article {
+            width: 44rem;
+            height: 20rem;
+            display: inline-block;
+            margin-bottom: 5rem;
+        }
+
+        section article .content .div-top {
+            display: flex;
+            margin: 0rem 0 0 5rem;
+            width: 35rem;
+            height: 10rem;
+            background: linear-gradient(180deg, hsla(0, 0%, 9%, 0.8), rgb(0, 0, 0));
+            border-radius: 1.5rem;
+            align-items: center;
+        }
+
+
+        section article .content .div-top h2 {
+            margin: 8rem 0rem 5rem 14rem;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            color: white;
+            opacity: 0.9;
+            font-weight: 500;
+            height: 6rem;
+        }
+
+
+        section article .content .div-top h3 {
+            padding: 0.5rem;
+            margin-top: 5rem;
+            margin-left: 6rem;
+            color: white;
+            border-radius: 0.2rem;
+            box-shadow: rgba(102, 102, 102, 0.35) 0px 5px 15px;
+        }
+
+        section article .content .div-buttom {
+            display: inline-block;
+            margin: 1rem 0 0 5rem;
+            width: 35rem;
+            height: 15rem;
+            background: linear-gradient(rgb(27, 27, 27), hsla(0, 0%, 0%, 1));
+            border-radius: 1.5rem;
+            box-shadow: 1px 9px 10px #dddddd;
+        }
+
+        section article .content .div-buttom ul {
+            margin: 2rem 0rem 1rem 14rem;
+        }
+
+        section article .content .div-buttom ul li {
+            list-style-type: circle;
+            color: #dddddd;
+        }
+
+        section article .content .div-buttom ul li p {
+            margin: 1rem 0rem 0rem 1rem;
+            color: white;
+            opacity: 0.9;
+        }
+
+
+        section article .content .div-buttom button {
+            color: rgb(184, 184, 184);
+            background: linear-gradient(180deg, hsla(0, 0%, 9%, 0.8), rgb(0, 0, 0));
+            height: 2rem;
+            width: 7rem;
+            border: none;
+            border-radius: 3rem;
+            text-transform: capitalize;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 2rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            font-size: 0.8rem;
+        }
+
+        section article .content .div-buttom .button-card {
+            margin: 0 0 0 7rem;
+        }
+
+
+        section article .circle-for-box {
+            display: inline-block;
+            width: 16rem;
+            height: 16rem;
+            margin-top: -24rem;
+            margin-left: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+        }
+
+
+        section article .circle-for-box .div-ring {
+            display: inline-block;
+            width: 14rem;
+            height: 14rem;
+            margin-top: 0rem;
+            margin-left: 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 0.1rem solid rgb(51, 51, 51);
+            border-left: 0.1rem solid rgb(31, 31, 31);
+            border-right: 0.1rem solid hsl(0, 0%, 7%);
+            border-bottom: 0.1rem solid hsl(0, 0%, 0%);
+            border-radius: 50%;
+        }
+
+
+        section article .circle-for-box .div-ring .circle {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 43%;
+            height: 4px;
+            background: transparent;
+            transform-origin: left;
+            animation: return 10s linear infinite;
+
+        }
+
+        section article .circle-for-box .div-ring .circle::before {
+            content: "";
+            position: absolute;
+            top: -6px;
+            right: -7.1px;
+            background: rgb(230, 28, 28);
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            box-shadow: rgba(63, 0, 0, 0.979) 0px 7px 29px 0px;
+
+        }
+
+        @keyframes return {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        section article .circle-for-box .div-ring .div-circle {
+            display: inline-block;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            background: url("shoe-1.jpg");
+            background-size: contain;
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+
+        @media screen and (max-width: 855px) {
+            html {
+                font-size: 17px;
+            }
+        }
+
+        @media screen and (max-width: 710px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+
+        @media screen and (max-width: 530px) {
+            html {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article class="article-1">
+            <div class="content">
+                <div class="div-top">
+                    <h2>shoes name</h2>
+                    <h3>XX.X$</h3>
+                </div>
+                <div class="div-buttom">
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit ipsum dolor siipsum dolor sit ipsum dol </p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum </p>
+                        </li>
+                    </ul>
+                    <a href="#" class="button-card"> <button>
+                            Add to card
+                        </button>
+                    </a>
+                    <a href="#" class="button-favorite"> <button>
+                            Add to favorite
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="circle-for-box">
+                <div class="div-ring">
+                    <span class="circle"></span>
+                    <div class="div-circle"> </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>

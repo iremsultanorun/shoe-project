@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+        }
+
+        ::selection {
+            background: #9e9e9e;
+            color: rgb(0, 0, 0);
+        }
+
+
+        html::-webkit-scrollbar {
+            background: #95958D;
+            width: 0.5rem;
+
+
+        }
+
+
+        html::-webkit-scrollbar-thumb {
+            background: #000000;
+            width: 0.5rem;
+            height: 3rem;
+            border-radius: 3rem;
+
+
+        }
+
+
+        main {
+            width: 100wh;
+            height: 100vh;
+            background: linear-gradient(to top left, rgb(133, 133, 123), white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        main section {
+            width: 70rem;
+            height: 30rem;
+            background: white;
+            opacity: 0.5;
+
+
+
+        }
+
+        main article {
+            width: 70rem;
+            height: 30rem;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main article form fieldset legend {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        main article form fieldset .form-group label {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        #name-surname,
+        #tel,
+        #mail,
+        #message {
+            margin-top: 0.5rem;
+
+        }
+
+        main article form fieldset .form-group input {
+            background: linear-gradient(rgb(255, 255, 255), rgb(228, 228, 228));
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            outline: none;
+        }
+
+        main article form fieldset .form-group input:focus {
+            background: rgb(255, 255, 255);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+        }
+
+        main article form fieldset .form-group textarea {
+            background: linear-gradient(rgb(255, 255, 255), rgb(228, 228, 228));
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            outline: none;
+        }
+
+        main article form fieldset .form-group textarea:focus {
+            background: rgb(255, 255, 255);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        main article form fieldset .form-group {
+            margin-bottom: 1rem;
+        }
+
+        main article form fieldset .form-group input[type="submit"] {
+            background: rgb(165, 250, 222);
+            width: 4rem;
+            height: 2.5rem;
+            margin-right: 1rem;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        main article form fieldset .form-group input[type="submit"]:hover {
+            background: rgb(196, 255, 235);
+
+        }
+
+        main article form fieldset .form-group input[type="reset"] {
+            background: rgb(172, 172, 172);
+            width: 3.5rem;
+            height: 1.5rem;
+            margin-right: 1rem;
+            border-radius: 1rem;
+            box-shadow: rgba(12, 12, 12, 0.35) 0px 5px 15px;
+        }
+
+        main article form fieldset .form-group input[type="reset"]:hover {
+            background: rgb(196, 196, 196);
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section></section>
+        <article>
+            <form name="form" autocomplete="on">
+                <fieldset>
+                    <legend>CONTACT</legend>
+                    <div class="form-group">
+                        <label for="name-surname">Name and Surname:</label> <br>
+                        <input type="text" name="name-surname" id="name-surname" required placeholder="Lorem Ipsum">
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Telephone Number:</label> <br>
+                        <input type="tel" name="tel" id="tel" placeholder="05xx xxx xx xx"> <br>
+
+                        <label for="mail">Mail:</label> <br>
+                        <input type="email" name="mail" id="mail" required placeholder="abc@gmail.com"> <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label> <br>
+                        <textarea name="message" id="message" cols="30" rows="10" required
+                            placeholder="Share your suggestions and message"></textarea> <br>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+</body>
+
+</html>
